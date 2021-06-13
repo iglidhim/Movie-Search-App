@@ -1,0 +1,49 @@
+body {
+	background-image: url(/src/moviepic.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	color: white;
+}
+/*Body coloe */
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+/* Set pictures in a raw */
+
+.image-container {
+	position: relative;
+	transition: 1s;
+  	flex-shrink: 1;
+  	width: 300px;
+  	max-width: 300px;
+}
+/* Adjust picture format */
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+  	z-index: 1;
+}
+/* Scale pictures when you pint on it */
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+/* Fav bar over picture */
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+/* Fav bar settings */
