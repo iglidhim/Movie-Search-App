@@ -13,7 +13,7 @@ const App = () => {
 	const [tittle, setSearchValue] = useState('');
 
 	const getMovieRequest = async (tittle) => {
-		const url = `http://www.omdbapi.com/?s=${tittle}&apikey=5cb03411`;
+		const url = `https://omdb-api-demo.herokuapp.com/search/${tittle}`;
 
 		const response = await fetch(url);
 		const responseJson = await response.json();
