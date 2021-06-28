@@ -29,8 +29,8 @@ const App = () => {
 		getMovieRequest(tittle);
 	}, [tittle]);
 
-	// useEffect(() => {
-		// getFavourite();
+	useEffect(() => {
+	 getFavourite();
 		// const movieFavourites = JSON.parse(
 		// 	localStorage.getItem('movie-favs')
 		// );
